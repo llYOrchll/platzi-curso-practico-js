@@ -70,7 +70,13 @@ function areaCirculo(radio){
 }
 //console.log("El area del circulo es de: " + areaCirculo + " cm^2");
 
-
+function alturaIsoceles(lado1, lado2, base){
+    if(lado1 === lado2 && lado1 != base){
+        return Math.sqrt((lado1 * lado1) - ((base * base) / 4));
+    }else{
+        console.log("F");
+    }
+}
 console.groupEnd();
 
 
@@ -91,3 +97,4 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+
